@@ -99,7 +99,7 @@ $arVisual = $arResult['VISUAL']
                             ]) ?>
                             <div class="widget-item-fade"></div>
                             <div class="widget-item-name">
-                                <?= $arItem['VALUE'] ?>
+                                <?= $arItem['NAME'] ?>
                             </div>
                         <?= Html::endTag('a') ?>
                     <?= Html::endTag('div') ?>
