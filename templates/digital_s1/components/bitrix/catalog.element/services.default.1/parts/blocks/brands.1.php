@@ -9,7 +9,7 @@
 
 ?>
 <?php $APPLICATION->IncludeComponent(
-	'intec.universe:main.brands', 
+	'intec.universe:main.brands',
 	'template.3',
 	[
 		'IBLOCK_TYPE' => $arBlock['IBLOCK']['TYPE'],
@@ -33,6 +33,7 @@
 		'SLIDER_LOOP' => 'Y',
 		'SLIDER_AUTO_USE' => 'Y',
 		'TRANSPARENCY' => '50',
+		'OPACITY' => '50',
 		'GRAYSCALE' => 'N',
 		'FOOTER_SHOW' => 'Y',
         "FOOTER_POSITION" => "center",
