@@ -10,7 +10,7 @@
 ?>
 <?php $APPLICATION->IncludeComponent(
 	'intec.universe:main.brands', 
-	'template.2', 
+	'template.3',
 	[
 		'IBLOCK_TYPE' => $arBlock['IBLOCK']['TYPE'],
 		'IBLOCK_ID' => $arBlock['IBLOCK']['ID'],
@@ -18,6 +18,8 @@
 			'ID' => $arBlock['IBLOCK']['ELEMENTS']
 		],
 		'ELEMENTS_COUNT' => '',
+		'EFFECT' => 'none',
+		'LINE_COUNT' => '5',
 		'HEADER_SHOW' => 'Y',
 		'HEADER_POSITION' => 'center',
 		'HEADER_TEXT' => $arBlock['HEADER'],
@@ -26,7 +28,11 @@
 		'LINK_USE' => 'Y',
 		'BACKGROUND_USE' => 'Y',
 		'BACKGROUND_THEME' => 'dark',
-		'OPACITY' => '50',
+		'SLIDER_USE' => 'Y',
+		'SLIDER_DOTS' => 'Y',
+		'SLIDER_LOOP' => 'Y',
+		'SLIDER_AUTO_USE' => 'Y',
+		'TRANSPARENCY' => '50',
 		'GRAYSCALE' => 'N',
 		'FOOTER_SHOW' => 'Y',
         "FOOTER_POSITION" => "center",
