@@ -112,7 +112,7 @@ use intec\core\helpers\Json;
                                 <?php } ?>
                                 <div class="intec-grid-item">
                                     <?= Html::tag('a', $arItem['NAME'], [
-                                        'href' => $arItem['DETAIL_PAGE_URL'],
+                                        //'href' => $arItem['DETAIL_PAGE_URL'],
                                         'class' => 'catalog-section-item-name'
                                     ]) ?>
                                 </div>
@@ -136,14 +136,14 @@ use intec\core\helpers\Json;
                             <?php } ?>
                             <div class="catalog-section-item-buttons">
                                 <div class="catalog-section-item-buttons-wrap">
-                                    <?= Html::tag('a', Loc::getMessage('C_BITRIX_CATALOG_SECTION_SERVICES_LIST_5_TEMPLATE_DETAIL_BUTTON_TEXT'), [
-                                        'href' => $arItem['DETAIL_PAGE_URL'],
-                                        'class' => [
-                                            'catalog-section-item-button',
-                                            'intec-cl-border-hover',
-                                            'intec-cl-background-hover'
-                                        ]
-                                    ]) ?>
+<!--                                    --><?//= Html::tag('a', Loc::getMessage('C_BITRIX_CATALOG_SECTION_SERVICES_LIST_5_TEMPLATE_DETAIL_BUTTON_TEXT'), [
+//                                        'href' => $arItem['DETAIL_PAGE_URL'],
+//                                        'class' => [
+//                                            'catalog-section-item-button',
+//                                            'intec-cl-border-hover',
+//                                            'intec-cl-background-hover'
+//                                        ]
+//                                    ]) ?>
                                     <?php if ($arData['BUTTON']['SHOW']) {
 
                                         if (!empty($arData['BUTTON']['TEXT']))
