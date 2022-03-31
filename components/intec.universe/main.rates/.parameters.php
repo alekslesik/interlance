@@ -41,17 +41,11 @@ if (!empty($arIBlock)) {
         'GLOBAL_ACTIVE' => 'Y'
     ]))->indexBy('ID');
 
-    $arSort = Array("sort"=>"asc");
-
-    $testProp = CIBlockProperty::GetList($arSort, [
+    $arProperties = Arrays::fromDBResult(CIBlockProperty::GetList([
+       'SORT' => 'ASC'
+    ], [
        'ACTIVE' => 'Y',
        'IBLOCK_ID' => $arIBlock['ID']
-    ])->Fetch();
-
-    $arProperties = Arrays::fromDBResult(CIBlockProperty::GetList($arSort, [
-       'ACTIVE' => 'Y',
-       'IBLOCK_ID' => $arIBlock['ID']
-//    ]))->indexBy('ID');
     ]))->indexBy('SORT');
 
     $hPropertiesList = function ($sKey, $arProperty) {
