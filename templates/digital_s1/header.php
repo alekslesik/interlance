@@ -128,6 +128,34 @@ $part = Constructor::isLite() ? 'lite' : 'base';
     <head>
         <?php if (FileHelper::isFile($directory.'/parts/custom/header.start.php')) include($directory.'/parts/custom/header.start.php') ?>
         <title><?php $APPLICATION->ShowTitle() ?></title>
+       <script type="text/javascript">
+          (function (d, w, c) {
+             (w[c] = w[c] || []).push(function() {
+                try {
+                   w.yaCounter11884189 = new Ya.Metrika2({
+                      id:11884189,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true,
+                      triggerEvent:true
+                   });
+                } catch(e) { }
+             });
+
+             var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+             s.type = "text/javascript";
+             s.async = true;
+             s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+             if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+             } else { f(); }
+          })(document, window, "yandex_metrika_callbacks2");
+       </script>
+       <noscript><div><img src="https://mc.yandex.ru/watch/11884189" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <?php $APPLICATION->ShowHead() ?>
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <meta name="cmsmagazine" content="79468b886bf88b23144291bf1d99aa1c" />
