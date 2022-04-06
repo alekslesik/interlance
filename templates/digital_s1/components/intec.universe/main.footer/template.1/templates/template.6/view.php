@@ -178,7 +178,9 @@ $bPanelShow =
                         <?php if ($arResult['COPYRIGHT']['SHOW']) { ?>
                             <div class="widget-panel-item intec-grid-item intec-grid-item-768-1">
                                 <div class="widget-copyright">
-                                    <?= $arResult['COPYRIGHT']['VALUE'] ?>
+                                   <?//= $arResult['COPYRIGHT']['VALUE'] ?>
+                                   <p>&copy; <?php echo date('Y'); ?> Support Advance, <a href="/">Поддержка сайтов на Битрикс</a> </p>
+                                   <p> Обращаем ваше внимание на то, что данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 ч.2 Гражданского кодекса Российской Федерации.</p>
                                 </div>
                             </div>
                         <?php } else { ?>
