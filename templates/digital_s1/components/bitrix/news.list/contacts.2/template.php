@@ -42,6 +42,16 @@ $getMapCoordinates = function ($arItem) use ($arParams) {
 };
 ?>
 <div class="ns-bitrix c-news-list c-news-list-contacts-2" id="<?= $sTemplateId ?>">
+   <div class="news-list-items-wrap">
+      <div class="intec-content intec-content-visible">
+         <div class="intec-content-wrapper">
+            <div class="news-list-items">
+               <?php include(__DIR__.'/parts/items.php') ?>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br>
     <div class="news-list-maps-wrap">
         <div class="news-list-short-items-wrap">
             <div class="intec-content intec-content-visible">
@@ -54,15 +64,6 @@ $getMapCoordinates = function ($arItem) use ($arParams) {
         </div>
         <div class="news-list-maps" data-role="maps">
             <?php include(__DIR__.'/parts/maps.php') ?>
-        </div>
-    </div>
-    <div class="news-list-items-wrap">
-        <div class="intec-content intec-content-visible">
-            <div class="intec-content-wrapper">
-                <div class="news-list-items">
-                    <?php include(__DIR__.'/parts/items.php') ?>
-                </div>
-            </div>
         </div>
     </div>
 </div>
