@@ -70,7 +70,7 @@ $request = Core::$app->request;
                     </div>
                     <div class="form-result-new-field-content intec-ui-form-field-content">
                         <?php if ($sType == 'text' || $sType == 'email') { ?>
-                            <input type="text" class="intec-ui intec-ui-control-input intec-ui-mod-block intec-ui-mod-round-3 intec-ui-size-2" value="<?= Html::encode($request->post($sName)) ?>" name="<?= $sName ?>" />
+                            <input type="text" class="intec-ui intec-ui-control-input intec-ui-mod-block intec-ui-mod-round-3 intec-ui-size-2 1" value="<?= Html::encode($request->post($sName)) ?>" name="<?= $sName ?>" />
                         <?php } else { ?>
                             <textarea class="intec-ui intec-ui-control-input intec-ui-mod-block intec-ui-mod-round-3 intec-ui-size-2" name="<?= $sName ?>"><?= Html::encode($request->post($sName)) ?></textarea>
                         <?php } ?>
