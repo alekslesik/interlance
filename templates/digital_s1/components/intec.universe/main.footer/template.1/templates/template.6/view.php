@@ -62,7 +62,7 @@ $bPanelShow =
                                         <span class="widget-part-item-icon">
                                             <i class="fas fa-envelope"></i>
                                         </span>
-                                        <a class="widget-part-item-text intec-cl-text" href="mailto:<?= $arResult['EMAIL']['VALUE'] ?>">
+                                        <a style= "color: #d6b1b3 !important;" class="widget-part-item-text intec-cl-text" href="mailto:<?= $arResult['EMAIL']['VALUE'] ?>">
                                             <?= $arResult['EMAIL']['VALUE'] ?>
                                         </a>
                                     </div>
@@ -72,7 +72,7 @@ $bPanelShow =
                                         <span class="widget-part-item-icon">
                                             <i class="fas fa-phone"></i>
                                         </span>
-                                        <a class="widget-part-item-text intec-cl-text" href="tel:<?= $arResult['PHONE']['VALUE']['LINK'] ?>">
+                                        <a style= "color: #e6dfd8 !important;" class="widget-part-item-text intec-cl-text" href="tel:<?= $arResult['PHONE']['VALUE']['LINK'] ?>">
                                             <?= $arResult['PHONE']['VALUE']['DISPLAY'] ?>
                                         </a>
                                     </div>
@@ -82,7 +82,7 @@ $bPanelShow =
                                         <span class="widget-part-item-icon">
                                             <i class="fas fa-map-marker-alt"></i>
                                         </span>
-                                        <span class="widget-part-item-text intec-cl-text">
+                                        <span class="widget-part-item-text intec-cl-text" style= "color: #e6dfd8 !important;">
                                             <?= $arResult['ADDRESS']['VALUE'] ?>
                                         </span>
                                     </div>
