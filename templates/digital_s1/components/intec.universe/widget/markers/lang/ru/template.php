@@ -1,5 +1,0 @@
-<?php
-
-$MESS['MARKERS_VIEW_MARKER_RECOMMENDATION'] = 'Советуем';
-$MESS['MARKERS_VIEW_MARKER_NEW'] = 'Новинка';
-$MESS['MARKERS_VIEW_MARKER_HIT'] = 'Хит';
