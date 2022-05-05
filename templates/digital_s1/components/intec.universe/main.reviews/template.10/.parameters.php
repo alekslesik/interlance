@@ -33,3 +33,10 @@ if ($arCurrentValues['HIDING_USE'] === 'Y') {
         'DEFAULT' => 2
     ];
 }
+
+//$arTemplateParameters['LINE_COUNT'] = [
+//   'PARENT' => 'VISUAL',
+//   'NAME' => Loc::getMessage('C_MAIN_STAFF_TEMPLATE_2_HIDING_VISIBLE'),
+//   'TYPE' => 'STRING',
+//   'DEFAULT' => 2
+//];

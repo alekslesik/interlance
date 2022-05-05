@@ -57,6 +57,10 @@ if (!empty($arParams['PROPERTY_LIST'])) {
             }
 }
 
+usort($arResult['PROPERTIES'], function($a, $b) {
+    return $a['SORT'] - $b['SORT'];
+});
+
 unset($arProperties);
 
 $arForm = [

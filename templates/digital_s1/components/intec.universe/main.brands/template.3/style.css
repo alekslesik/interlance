@@ -101,4 +101,9 @@
   padding-bottom: 70px;
 }
 
+.intec-ui.intec-ui-control-navigation .intec-ui-part-button-left,
+.intec-ui.intec-ui-control-navigation .intec-ui-part-button-right {
+  color: #fff !important;
+}
+
 /*# sourceMappingURL=style.css.map */

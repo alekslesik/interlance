@@ -1,5 +1,5 @@
 $component: 'staff';
-$template: 'template-3';
+$template: 'template-5';
 
 .widget.c-#{$component}.c-#{$component}-#{$template} {
   .widget-items {}
@@ -15,14 +15,14 @@ $template: 'template-3';
 
   .widget-item-wrapper {
     display: block;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #f0f0f0;
     height: 100%;
     padding: 55px;
     box-sizing: border-box;
-    transition: border-color 350ms;
+    //transition: border-color 350ms;
 
     &:hover {
-      border-color: #0065ff;
+      border-color: #f0f0f0;
     }
   }
 

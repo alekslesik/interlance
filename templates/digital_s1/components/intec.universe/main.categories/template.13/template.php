@@ -110,7 +110,7 @@ $arVisual = $arResult['VISUAL'];
                                     <?= Html::tag('a', '', [
                                         'class' => 'widget-item-link',
                                         'href' => $arItem['DETAIL_PAGE_URL'],
-                                        'target' => $arVisual['LINK']['BLANK'] ? '_blank' : null
+						//'target' => $arVisual['LINK']['BLANK'] ? '_blank' : null
                                     ]) ?>
                                 <?php } ?>
                                 <div class="widget-item-text">

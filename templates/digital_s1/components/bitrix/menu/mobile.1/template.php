@@ -303,8 +303,8 @@ $arRegionality = [
                                             </div>
                                             <div class="menu-item-text-wrap intec-grid-item intec-grid-item-shrink-1">
                                                 <div class="menu-item-text">
-<!--                                                    --><?//= $arAddress['VALUE'] ?>
-                                                   Москва, Неманский проезд,<br> дом 18
+                                                    <!--                                                    --><?//= $arAddress['VALUE'] ?>
+                                                   Москва, Неманский проезд, <br> дом 18
                                                 </div>
                                             </div>
                                         </div>
@@ -347,7 +347,7 @@ $arRegionality = [
                                                 </div>
                                             </div>
                                             <div class="menu-item-text-wrap intec-grid-item intec-grid-item-shrink-1">
-<!--                                                <a href="tel:--><?//= $arPhone['VALUE']['LINK'] ?><!--" class="menu-item-text">-->
+                                                <!--                                                <a href="tel:--><?//= $arPhone['VALUE']['LINK'] ?><!--" class="menu-item-text">-->
 <!--                                                    --><?//= $arPhone['VALUE']['DISPLAY'] ?>
 <!--                                                </a>-->
                                                <a href="tel:+7 (495) 414-29-23" class="menu-item-text">
@@ -394,7 +394,7 @@ $arRegionality = [
                                                 </div>
                                             </div>
                                             <div class="menu-item-text-wrap intec-grid-item intec-grid-item-shrink-1">
-<!--                                                <a href="mailto:--><?//= $arEmail['VALUE'] ?><!--" class="menu-item-text">-->
+                                                 <!--                                                <a href="mailto:--><?//= $arEmail['VALUE'] ?><!--" class="menu-item-text">-->
 <!--                                                    --><?//= $arEmail['VALUE'] ?>
 <!--                                                </a>-->
                                                <a href="mailto:dev@supporta.ru" class="menu-item-text">

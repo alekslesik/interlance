@@ -180,7 +180,18 @@ $part = Constructor::isLite() ? 'lite' : 'base';
             <script type="text/javascript"><?= $template->getJs() ?></script>
         <?php } ?>
         <?php if (FileHelper::isFile($directory.'/parts/custom/header.end.php')) include($directory.'/parts/custom/header.end.php') ?>
-    </head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-23FVCDJCT2"></script>
+
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-23FVCDJCT2');
+	</script>
+
+	</head>
     <body class="public intec-adaptive">
         <?php if (FileHelper::isFile($directory.'/parts/custom/body.start.php')) include($directory.'/parts/custom/body.start.php') ?>
         <?php $APPLICATION->IncludeComponent(

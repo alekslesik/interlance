@@ -21,7 +21,7 @@ $arBlocks = $arResult['BLOCKS'];
 $arVisual = $arResult['VISUAL'];
 
 ?>
-<div class="widget c-staff c-staff-template-3" id="<?= $sTemplateId ?>" data-collapsed="true" data-hiding="false">
+<div class="widget c-staff c-staff-template-5" id="<?= $sTemplateId ?>" data-collapsed="true" data-hiding="false">
     <div class="widget-wrapper intec-content intec-content-visible">
         <div class="widget-wrapper-2 intec-content-wrapper">
             <?php if ($arBlocks['HEADER']['SHOW'] || $arBlocks['DESCRIPTION']['SHOW']) { ?>
@@ -110,7 +110,7 @@ $arVisual = $arResult['VISUAL'];
                                         </div>
                                         <?php if (!empty($arItem['PREVIEW_TEXT'])) { ?>
                                             <div class="widget-item-description">
-                                                <?= $arItem['PREVIEW_TEXT'] ?>
+                                               &#8220;<?= $arItem['PREVIEW_TEXT'] ?>&#8221;
                                             </div>
                                         <?php } ?>
                                     </div>

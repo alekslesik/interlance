@@ -39,7 +39,7 @@ $sTemplateId = Html::getUniqueId(null, Component::getUniqueId($this));
             <?php if (!empty($arResult['QUESTIONS']) || $arResult['isUseCaptcha']) { ?>
                 <div class="form-result-new-fields intec-ui-form-fields">
                     <?php foreach ($arResult['QUESTIONS'] as $arQuestion) { ?>
-                        <?= Html::beginTag('div', [
+                        <?= Html::beginTag('div data-caption="'.$arQuestion['CAPTION'].'"', [
                             'class' => Html::cssClassFromArray([
                                 'form-result-new-field' => true,
                                 'intec-ui-form-field' => true,
@@ -50,7 +50,7 @@ $sTemplateId = Html::getUniqueId(null, Component::getUniqueId($this));
                                 <?= $arQuestion['CAPTION'] ?>
                             </div>
                             <div class="form-result-new-field-content intec-ui-form-field-content">
-                                <?= $arQuestion['HTML_CODE'] ?>
+                                <?= str_replace('<input', '<input placeholder="'.$arQuestion['CAPTION'].'"', $arQuestion['HTML_CODE']) ?>
                             </div>
                         <?= Html::endTag('div') ?>
                     <?php } ?>

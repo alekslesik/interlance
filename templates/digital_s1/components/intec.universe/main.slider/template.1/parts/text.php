@@ -41,10 +41,7 @@ $vTextButton = include(__DIR__.'/buttons/view.'.$arVisual['BUTTON']['VIEW'].'.ph
                     ]
                 ]) ?>
             <?php } ?>
-
-
-            <?php
-            if ($arVisual['HEADER']['SHOW'] && !empty($arData['HEADER']['VALUE'])) { ?>
+            <?php if ($arVisual['HEADER']['SHOW'] && !empty($arData['HEADER']['VALUE'])) { ?>
                 <?= Html::tag($bHeaderH1 ? 'h1' : 'div', $arData['HEADER']['VALUE'], [
                     'class' => 'widget-item-header',
                     'data' => [

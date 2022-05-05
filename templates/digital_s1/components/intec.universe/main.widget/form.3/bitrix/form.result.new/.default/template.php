@@ -81,7 +81,7 @@ $sReqSign = ' *';
                         $sValue = Html::encode(Core::$app->request->post($sName));
 
                     ?>
-                        <?= Html::beginTag('div', [
+                        <?= Html::beginTag('div data-caption="'.$arQuestion['CAPTION'].'"', [
                             'class' => Html::cssClassFromArray([
                                 'widget-form-result-new-field-wrap' => true,
                                 'intec-grid-item-1' => $sType == 'textarea',
@@ -96,6 +96,7 @@ $sReqSign = ' *';
                                 <?php if ($sType == 'text' || $sType == 'email') { ?>
                                     <?= Html::input($sType, $sName, $sValue, [
                                         'class' => 'widget-form-result-new-field-input',
+										'placeholder' => $sCaption == 'spam' ? $sCaption:'',
                                         'data-role' => 'input',
                                         'required' => $bRequired ? '' : null
                                     ]) ?>
